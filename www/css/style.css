@@ -1,0 +1,17 @@
+img, a {
+	height: inherit;
+	width: inherit;
+}
+
+.tabs-puja > .tabs, .tabs.tabs-puja {
+    border-color: #8c1515;
+    background-color: #8c1515;
+    background-image: linear-gradient(0deg, #cc2311, #cc2311 50%, transparent 50%);
+    color: #fff;
+}
+
+.varun{
+    border-color: #8c1515;
+    background-color: #8c1515;
+    color: #fff;
+}
