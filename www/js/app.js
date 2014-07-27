@@ -121,8 +121,6 @@ angular.module('ionicApp', ['ionic'])
     })
 
     .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal, $http) {
-        $rootScope.name = "Couch";
-
         $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
             $scope.taskModal = modal;
         }, {
@@ -141,6 +139,14 @@ angular.module('ionicApp', ['ionic'])
             $scope.taskModal.show();
         };
 
+        $scope.itemClicked = function(id){
+            $rootScope.itemPic = $scope.itemListings[id].itemPic;
+            $rootScope.itemname = $scope.itemListings[id].itemTitle;
+            $rootScope.itemDetails = $scope.itemListings[id].itemDetails;
+            $rootScope.itemDescription = $scope.itemListings[id].itemDescription;
+            $rootScope.itemPrice = $scope.itemListings[id].itemPrice;
+        };
+
         var url = "http://localhost:8080/";
 
         $http.get(url).
@@ -157,10 +163,10 @@ angular.module('ionicApp', ['ionic'])
         };
     })
 
-    .controller('factsCtrl', function($scope, $rootScope, $ionicModal, $timeout, $ionicLoading) {
-        $scope.showLoading = function() {
+    .controller('factsCtrl', function($scope, $rootScope, $timeout, $ionicLoading) {
+        $scope.showLoading = function(Text) {
             $scope.loadingIndicator = $ionicLoading.show({
-                content: 'Item reserved!',
+                content: 'Item '+Text+"!",
                 animation: 'fade-in',
                 showBackdrop: true,
                 maxWidth: 200,

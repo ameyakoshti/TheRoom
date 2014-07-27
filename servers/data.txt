@@ -1,53 +1,62 @@
 [
     {
+        "itemPic":"img/couch.jpg",
         "itemTitle":"Couch",
         "itemDetails":"The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.",
         "itemDescription":"Used",
         "itemPrice":30
     },
     {
+        "itemPic":"img/shirt.jpeg",
         "itemTitle":"Shirt",
         "itemDetails":"Blue Old Navy Shirt",
         "itemDescription":"Used",
         "itemPrice":15
     },
     {
+        "itemPic":"img/bike.jpeg",
         "itemTitle":"Bicycle",
         "itemDetails":"Orange and blue bicycle; 3 gears",
         "itemDescription":"Like New",
         "itemPrice":100
     },
     {
+        "itemPic":"img/ticket.jpg",
         "itemTitle":"Tickets",
         "itemDetails":"Two tickets to the UT v. KU Basketball game",
         "itemDescription":"New",
         "itemPrice":150
     },
     {
-        "itemTitle":"Microwave",
-        "itemDetails":"Stainless steel microwave",
-        "itemDescription":"Like New",
-        "itemPrice":100
-    },
-    {
+        "itemPic":"img/giftcard.jpg",
         "itemTitle":"Gift Card",
         "itemDetails":"All purpose gift card",
         "itemDescription":"New",
         "itemPrice":45
     },
     {
+        "itemPic":"img/book.jpeg",
+        "itemTitle":"Books",
+        "itemDetails":"Computer graphics , Computer networks , Analog and Digital Communication Systems books",
+        "itemDescription":"Like New",
+        "itemPrice":75
+    },
+    {
+        "itemPic":"img/shoerack.jpeg",
         "itemTitle":"Shoe rack",
         "itemDetails":"Wood shoe rack; goes perfectly with the wood coffee table.",
         "itemDescription":"Used",
         "itemPrice":30
     },
     {
+        "itemPic":"img/router.jpg",
         "itemTitle":"Router",
         "itemDetails":"Wireless router",
         "itemDescription":"New",
         "itemPrice":50
     },
     {
+        "itemPic":"img/No_Image_Available.jpg",
         "itemTitle":"Pen",
         "itemDetails":"BIC",
         "itemDescription":"New",

@@ -134,54 +134,54 @@
             </button>
           </div>
           <div class="row">
-            <div class="col col-50"><a href="#/tab/facts"><img src="img/couch.jpg"/></a></div>
-            <div class="col col-50"><a href="#/tab/facts"><img src="img/shirt.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(0)"><img src="img/couch.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(1)"><img src="img/shirt.jpeg"/></a></div>
           </div>
           <div class="row">
-            <div class="col col-50"><a href="#/tab/facts"><img src="img/bike.jpeg"/></a></div>
-            <div class="col col-50"><a href="#/tab/facts"><img src="img/ticket.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(2)"><img src="img/bike.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(3)"><img src="img/ticket.jpg"/></a></div>
           </div>
           <div class="row">
-              <div class="col col-50"><a href="#/tab/facts"><img src="img/giftcard.jpg"/></a></div>
-              <div class="col col-50"><a href="#/tab/facts"><img src="img/book.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(4)"><img src="img/giftcard.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(5)"><img src="img/book.jpeg"/></a></div>
           </div>
           <div class="row">
-              <div class="col col-50"><a href="#/tab/facts"><img src="img/shoerack.jpeg"/></a></div>
-              <div class="col col-50"><a href="#/tab/facts"><img src="img/router.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(6)"><img src="img/shoerack.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(7)"><img src="img/router.jpg"/></a></div>
           </div>
           <div class="row">
-                <div class="col col-50"><a href="#/tab/facts"><img src="img/No_Image_Available.png"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts" ng-click="itemClicked(8)"><img src="img/No_Image_Available.png"/></a></div>
           </div>
         </ion-content>
       </ion-view>
     </script>
 
     <script id="facts.html" type="text/ng-template">
-      <ion-view title="{{name}}">
+      <ion-view title="{{itemname}}">
         <ion-content padding="true">
 
           <!-- Product Image -->
           <div class="row">
-            <div class="col"><a href="#/tab/facts"><img src="img/couch.jpg"/></a></div>
+            <div class="col"><a href="#/tab/facts"><img src="{{itemPic}}"/></a></div>
           </div>
 
             <label class="item item-input item-floating-label">
                 <span class="input-label">Item Name</span>
-                <p>Used Couch</p>
+                <p>{{itemname}}</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Description</span>
                 <div class="item-text-wrap">
-                    <p>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</p>
+                    <p>{{itemDetails}}</p>
                 </div>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Condition</span>
-                <p>Used-Acceptable</p>
+                <p>{{itemDescription}}</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Price</span>
-                <p>$30.00</p>
+                <p>{{itemPrice}}</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label" >Location Preference</span>
@@ -201,10 +201,10 @@
 
             <div class="row" style="padding-top:20px;">
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading()">Reserve</a>
+                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading('Reserved')">Reserve</a>
               </div>
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Save</a>
+                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading('Saved')">Save</a>
               </div>
             </div>
             <div class="row" style="padding-top:20px;">
@@ -392,7 +392,7 @@
                             <input type="hidden" name="button_subtype" value="services">
                             <input type="hidden" name="note" value="0">
                             <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-                            <input type="image" src="img\paypal-button.png" border="0" name="submit" style="position:absolute;top:12px;left:10px" ng-click="showLoading()">
+                            <input type="image" src="img\paypal-button.png" border="0" name="submit" style="position:absolute;top:12px;left:100px" ng-click="showLoading()">
                         </form>
                     </div>
                 </div>
