@@ -280,3 +280,12 @@ objc[9692]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.ap
 2014-07-16 21:25:31.482 The-Room[9692:70b] [CDVTimer][TotalPluginStartup] 234.035969ms
 2014-07-16 21:25:31.647 The-Room[9692:70b] Resetting plugins due to page load.
 2014-07-16 21:25:32.487 The-Room[9692:70b] Finished load of: file:///Users/ameyakoshti/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/40E55EEE-BD59-4158-AB1A-15B5B907E5CD/The-Room.app/www/index.html
+2014-07-26 21:42:53.543 The-Room[10534:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-26 21:42:53.846 The-Room[10534:70b] Unlimited access to network resources
+2014-07-26 21:42:55.222 The-Room[10534:70b] [CDVTimer][keyboard] 0.075996ms
+2014-07-26 21:42:55.223 The-Room[10534:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-26 21:42:55.223 The-Room[10534:70b] [CDVTimer][statusbar] 0.528991ms
+2014-07-26 21:42:55.224 The-Room[10534:70b] [CDVTimer][TotalPluginStartup] 1.603007ms
+2014-07-26 21:42:55.578 The-Room[10534:70b] Resetting plugins due to page load.
+2014-07-26 21:42:56.173 The-Room[10534:70b] Finished load of: file:///Users/PujaGubbi/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/E453217F-60AF-4B3E-83BD-E64F1421E05D/The-Room.app/www/index.html#/sign-in
+2014-07-26 21:42:56.273 The-Room[10534:70b] THREAD WARNING: ['Device'] took '11.183838' ms. Plugin should use a background thread.

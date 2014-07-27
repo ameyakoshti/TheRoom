@@ -169,69 +169,56 @@
             <div class="col"><a href="#/tab/facts"><img src="img/couch.jpg"/></a></div>
           </div>
 
-          <!-- Product Title -->
-          <h2 class="text-center">Used Couch</h2>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Item Name</span>
+                <h3>Used Couch</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Description</span>
+                <div class="item-text-wrap">
+                    <h3>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</h3>
+                </div>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Condition</span>
+                <h3>Used-Acceptable</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Price</span>
+                <h3>$30.00</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label" >Location Preference</span>
+                <label class=" item-input item-select-right">
+                    <div class="input-label-right">
+                        &nbsp
+                    </div>
+                    <select>
+                        <option selected>Select</option>
+                        <option>Library</option>
+                        <option>Student Union</option>
+                        <option>Mens Restroom</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+            </label>
 
-          <!-- Product Details title -->
-          <h4 class="text-center">Details / Condition</h4>
-
-          <!-- Product Description -->
-          <div class="item item-text-wrap">
-            <p>
-              The old $20 couch from the Salvation Army was "pretty ugly" and smelled, but it fit the apartment three New York college roommates were sharing.
-            </p>
-          </div>
-
-          <!-- Product Price -->
-          <div class="row">
-            <div class="col col-50 text-right">
-              <h4 class="text-center">Price</h4>
-            </div>
-            <div class="col col-50 text-left">
-              <h4 class="text-center">$30</h4>
-            </div>
-          </div>
-
-          <!-- Product Location -->
-          <div class="row">
-              <div class="col col-50 text-right">
-                  <h4 class="text-center">Location</h4>
-              </div>
-              <div class="col">
-                  <label class="item item-input item-select">
-                      <div class="input-label">
-                          &nbsp
-                      </div>
-                      <select>
-                          <option>Library</option>
-                          <option selected>Student Union</option>
-                          <option>Mens Restroom</option>
-                      </select>
-                  </label>
-
-              </div>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="row" style="padding-top:20px;">
+            <div class="row" style="padding-top:20px;">
               <div class="col col-50">
-                <a class="button button-medium varun" style="display: block; width:100px;"href="#/tab/home">Buy</a>
+                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Reserve</a>
               </div>
-              <div class="col col-5"></div>
               <div class="col col-50">
-                  <a class="button button-medium varun" style="display: block; width:100px;"href="#/tab/home">Save</a>
+                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Save</a>
               </div>
-          </div>
-          <div class="row" style="padding-top:20px;">
-              <div class="col col-100">
-                <a class="button button-medium varun" style="display: block; width:150px;"href="#/tab/home">Message Seller</a>
+            </div>
+            <div class="row" style="padding-top:20px;">
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Message Seller</a>
               </div>
-              <div class="col col-1"></div>
-              <div class="col col-30">
-                <a class="button button-medium varun" style="display: block; width:100px;"href="#/tab/home">Offer</a>
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Sell Similar</a>
               </div>
-          </div>
-
+            </div>
 
           <!--<p>
             <a class="button icon ion-home" href="#/tab/home"> Home</a>
@@ -392,7 +379,9 @@
         <ion-view title="Messages">
             <ion-content padding="false">
                 <!-- Messages Image -->
-                    <img src="img/Messages%20Resized%20V2.jpg"/>
+                <div class="row">
+                    <img style="height: 800px" src="img/Messages%20Resized%20V2.jpg"/>
+                </div>
             </ion-content>
         </ion-view>
     </script>
