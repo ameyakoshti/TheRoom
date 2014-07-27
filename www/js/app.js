@@ -1,6 +1,9 @@
 angular.module('ionicApp', ['ionic'])
 
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
         $stateProvider
             .state('signin', {
@@ -100,7 +103,7 @@ angular.module('ionicApp', ['ionic'])
         };
     })
 
-    .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal) {
+    .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal, $http) {
         $rootScope.name = "Couch";
 
         $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
@@ -119,5 +122,21 @@ angular.module('ionicApp', ['ionic'])
 
         $scope.createTask = function(catergory) {
             $scope.taskModal.show();
+        };
+
+        var url = "http://localhost:8080/";
+
+        $http.get(url).
+            success(function(data, status, headers, config) {
+                //what do I do here?
+                displayData(data);
+            }).
+            error(function(data, status, headers, config) {
+                $scope.error = true;
+                console.log(data);
+        });
+
+        displayData = function(data){
+            
         };
     });
