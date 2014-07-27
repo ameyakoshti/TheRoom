@@ -125,7 +125,7 @@
 
     <script id="home.html" type="text/ng-template">
       <ion-view title="Home">
-          <ion-nav-buttons side="right">
+          <ion-nav-buttons side="left">
               <a class="button" style="background-color: #8c1515; border-color: #8c1515;" href="#/sign-in">
                   Log Out
               </a>
@@ -352,8 +352,41 @@
 
     <script id="myroom.html" type="text/ng-template">
         <ion-view title="My Room">
-            <ion-content padding="true">
-                <p>This is a blank page and my name is varun</p>
+            <ion-content padding="false">
+                <div class="list">
+
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/chair.JPG">
+                        <h2>Reserved Items</h2>
+                        <p>Items you have reserved to buy.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/microwave.jpg">
+                        <h2>Listed items</h2>
+                        <p>Items you have listed to sell.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/router.jpg">
+                        <h2>Saved items</h2>
+                        <p>Items you have saved for later.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/shoerack.jpeg">
+                        <h2>History</h2>
+                        <p>Transaction history.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/settings.png">
+                        <h2>Settings</h2>
+                        <p>User and account settings.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/logout.jpeg">
+                        <h2>Log out</h2>
+                        <p>Log out of user account.</p>
+                    </a>
+
+                </div>
             </ion-content>
         </ion-view>
     </script>
@@ -368,7 +401,7 @@
             <ion-content padding="false">
                 <!-- Messages Image -->
                 <div class="row">
-                    <div class="col"><img src="img/messages.png"/></div>
+                    <div class="col"><img src="img/Messages%20Resized%20V2.jpg"/></div>
                 </div>
             </ion-content>
         </ion-view>
