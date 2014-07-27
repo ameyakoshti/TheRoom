@@ -74,6 +74,22 @@ angular.module('ionicApp', ['ionic'])
                     }
                 }
             })
+            .state('tabs.reserved', {
+                url: "/reserved",
+                views: {
+                    'myroom-tab': {
+                        templateUrl: "reserved.html"
+                    }
+                }
+            })
+            .state('tabs.transact', {
+                url: "/transact",
+                views: {
+                    'myroom-tab': {
+                        templateUrl: "transact.html"
+                    }
+                }
+            })
             .state('tabs.navstack', {
                 url: "/navstack",
                 views: {

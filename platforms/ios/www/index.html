@@ -1,0 +1,425 @@
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>The Room</title>
+
+    <link href="http://code.ionicframework.com/1.0.0-beta.6/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    
+    <ion-nav-bar class="bar-positive nav-title-slide-ios7" style="background-color:#3498db;">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+    </ion-nav-bar>
+             
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+    <script id="sign-in.html" type="text/ng-template">
+      <ion-view title="Login">
+        <ion-content>
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="text" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" ng-model="user.password">
+            </label>
+          </div>
+          <div class="padding">
+            <button class="button button-block varun" ng-click="signIn(user)">
+              Sign-In
+            </button>
+            <a class="button button-block varun" href="#/register">
+                  Register
+            </button>
+            <a class="button button-block varun" href="#/forgot-password">
+                    Forgot password?
+            </a>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="register.html" type="text/ng-template">
+        <ion-view title="Register">
+            <ion-content>
+                <div class="list">
+                    <label class="item item-input">
+                        <span class="input-label">Name</span>
+                        <input type="text" ng-model="user.name">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Email</span>
+                        <input type="password" ng-model="user.email">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Password</span>
+                        <input type="password" ng-model="user.password">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Confirm</span>
+                        <input type="password" ng-model="user.password">
+                    </label>
+                </div>
+                <div class="padding">
+                    <button class="button button-block varun" ng-click="signIn(user)">
+                        Sign-In
+                    </button>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="forgot-password.html" type="text/ng-template">
+      <ion-view title="Forgot Password">
+        <ion-content padding="true">
+          <p>
+            This page should ask security questions/send an email confirming to change password
+          </p>
+          <p>
+            Return to <a href="#/sign-in">Sign-In</a>.
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    
+    <script id="tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-puja">
+
+        <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+          <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="My Room" icon="ion-log-in" href="#/tab/myroom">
+          <ion-nav-view name="myroom-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Messages" icon="ion-ios7-chatboxes" href="#/tab/messages">
+          <ion-nav-view name="messages-tab"></ion-nav-view>
+        </ion-tab>
+
+          <ion-tab title="Sell" icon="ion-log-out" href="#/tab/sell">
+              <ion-nav-view name="sell-tab"></ion-nav-view>
+
+            <!--  <ion-tab title="Sell" icon="ion-social-usd-outline" href="">
+          <ion-nav-view name=""></ion-nav-view> -->
+        </ion-tab>
+
+      </ion-tabs>
+    </script>
+
+    <script id="home.html" type="text/ng-template">
+      <ion-view title="Home">
+          <ion-nav-buttons side="left">
+              <button class="button button-icon" ng-click="showCatergories()">
+                  <i class="icon ion-navicon"></i>
+              </button>
+          </ion-nav-buttons>
+        <ion-content padding="true">
+          <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+              <i class="icon ion-ios7-search placeholder-icon"></i>
+              <input type="search" placeholder="Search">
+            </label>
+            <button class="button button-clear">
+              Cancel
+            </button>
+          </div>
+          <div class="row">
+            <div class="col col-50"><a href="#/tab/facts"><img src="img/couch.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts"><img src="img/chair.jpg"/></a></div>
+          </div>
+          <div class="row">
+            <div class="col col-50"><a href="#/tab/facts"><img src="img/mbp.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/facts"><img src="img/hookah.jpg"/></a></div>
+          </div>
+          <div class="row">
+              <div class="col col-50"><a href="#/tab/facts"><img src="img/microwave.jpg"/></a></div>
+              <div class="col col-50"><a href="#/tab/facts"><img src="img/table.jpg"/></a></div>
+          </div>
+          <div class="row">
+              <div class="col col-50"><a href="#/tab/facts"><img src="img/shoerack.jpeg"/></a></div>
+              <div class="col col-50"><a href="#/tab/facts"><img src="img/router.jpg"/></a></div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="facts.html" type="text/ng-template">
+      <ion-view title="{{name}}">
+        <ion-content padding="true">
+
+          <!-- Product Image -->
+          <div class="row">
+            <div class="col"><a href="#/tab/facts"><img src="img/couch.jpg"/></a></div>
+          </div>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Item Name</span>
+                <h3>Used Couch</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Description</span>
+                <div class="item-text-wrap">
+                    <h3>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</h3>
+                </div>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Condition</span>
+                <h3>Used-Acceptable</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Price</span>
+                <h3>$30.00</h3>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label" >Location Preference</span>
+                <label class=" item-input item-select-right">
+                    <div class="input-label-right">
+                        &nbsp
+                    </div>
+                    <select>
+                        <option selected>Select</option>
+                        <option>Library</option>
+                        <option>Student Union</option>
+                        <option>Mens Restroom</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+            </label>
+
+            <div class="row" style="padding-top:20px;">
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:150px;"href="#/tab/home">Reserve</a>
+              </div>
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:150px;"href="#/tab/home">Save</a>
+              </div>
+            </div>
+            <div class="row" style="padding-top:20px;">
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:150px;"href="#/tab/home">Message Seller</a>
+              </div>
+              <div class="col col-50">
+                 <a class="button button-medium varun" style="width:150px;"href="#/tab/home">Sell Similar</a>
+              </div>
+            </div>
+
+          <!--<p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">Some images</a>
+          </p>-->
+        </ion-content>
+      </ion-view>
+    </script>
+
+
+    <script id="sell.html" type="text/ng-template">
+        <ion-view title="Sell Item">
+            <ion-content padding="true">
+
+                <!-- Product Image -->
+                <div class="row">
+                    <div class="col">
+                        <img src="img/insertpicture.jpg"/>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Item Name</span>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Description</span>
+                        <input type="text" placeholder="Description">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Details</span>
+                        <input type="text" placeholder="Condition">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Price</span>
+                        <input type="text" placeholder="$0.00">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label" >Location Preference #1</span>
+                        <label class="item item-input item-select-right">
+                            <div class="input-label-right">
+                                &nbsp
+                            </div>
+                            <select>
+                                <option selected>Select</option>
+                                <option>Library</option>
+                                <option>Student Union</option>
+                                <option>Mens Restroom</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Location Preference #2</span>
+                        <label class="item item-input item-select-right">
+                            <div class="input-label-right">
+                                &nbsp
+                            </div>
+                            <select>
+                                <option selected>Select</option>
+                                <option>Library</option>
+                                <option>Student Union</option>
+                                <option>Mens Restroom</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Location Preference #3</span>
+                        <label class="item item-input item-select-right">
+                            <div class="input-label-right">
+                                &nbsp
+                            </div>
+                            <select>
+                                <option selected>Select</option>
+                                <option>Library</option>
+                                <option>Student Union</option>
+                                <option>Mens Restroom</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                    </label>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="row" style="padding-top:5px; padding-left: 20px;">
+                    <div class="col col-50">
+                        <a class="button button-medium varun" style="display: block; width:100px;"href="#/tab/home">List</a>
+                    </div>
+                    <div class="col col-5"></div>
+                    <div class="col col-50">
+                        <a class="button button-medium varun" style="display: block; width:100px;"href="#/tab/home">Save</a>
+                    </div>
+                </div>
+
+                <!--<p>
+                  <a class="button icon ion-home" href="#/tab/home"> Home</a>
+                  <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">Some images</a>
+                </p>-->
+            </ion-content>
+        </ion-view>
+    </script>
+
+
+    <script id="facts2.html" type="text/ng-template">
+      <ion-view title="Also Factual">
+        <ion-content padding="true">
+          <h4>this is the facts 2 page</h4>
+            <a class="button icon ion-chevron-left" href="#/tab/facts"> Categories</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="myroom.html" type="text/ng-template">
+        <ion-view title="My Room">
+            <ion-content padding="false">
+                <div class="list">
+
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/chair.JPG">
+                        <h2>Reserved Items</h2>
+                        <p>Items you have reserved to buy.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/microwave.jpg">
+                        <h2>Listed items</h2>
+                        <p>Items you have listed to sell.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/router.jpg">
+                        <h2>Saved items</h2>
+                        <p>Items you have saved for later.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/shoerack.jpeg">
+                        <h2>History</h2>
+                        <p>Transaction history.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#">
+                        <img src="img/settings.png">
+                        <h2>Settings</h2>
+                        <p>User and account settings.</p>
+                    </a>
+                    <a class="item item-thumbnail-left" href="#/sign-in">
+                        <img src="img/logout.jpeg">
+                        <h2>Log out</h2>
+                        <p>Log out of user account.</p>
+                    </a>
+
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="messages.html" type="text/ng-template">
+        <ion-view title="Messages">
+            <ion-content padding="false">
+                <!-- Messages Image -->
+                    <img src="img/Messages%20Resized%20V2.jpg"/>
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="nav-stack.html" type="text/ng-template">
+      <ion-view title="Tab Nav Stack">
+        <ion-content padding="true">
+          <p><img src="http://4.bp.blogspot.com/-RqNswz4BnQE/UoubvfHf6BI/AAAAAAAABEY/QdEVsoDoo-w/s1600/Comedy+Face+of+Rowan+Atkinson+HD+Wallpaper.jpg" style="width:100%"></p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="new-task.html" type="text/ng-template">
+        <div class="modal">
+            <!-- Modal header bar -->
+            <ion-header-bar class="bar-secondary">
+                <h1 class="title">Categories</h1>
+                <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button>
+            </ion-header-bar>
+
+            <!-- Modal content area -->
+            <ion-content>
+                <form ng-submit="selectCa(task)">
+                    <ul class="list">
+                        <li class="item">Furniture</li>
+                        <li class="item">Electronic</li>
+                        <li class="item">Tickets</li>
+                        <li class="item">Textbooks</li>
+                        <li class="item">Vehicle</li>
+                        <li class="item">Clothing</li>
+                        <li class="item">Kitchen</li>
+                        <li class="item">Video Games</li>
+                        <li class="item">Sublets</li>
+                        <li class="item">Gift Cards</li>
+                        <li class="item">Sporting Good</li>
+                    </ul>
+                </form>
+            </ion-content>
+        </div>
+    </script>
+
+  </body>
+</html>
