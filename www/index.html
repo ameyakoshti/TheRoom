@@ -126,6 +126,9 @@
     <script id="home.html" type="text/ng-template">
       <ion-view title="Home">
           <ion-nav-buttons side="left">
+              <a class="button" style="background-color: #8c1515; border-color: #8c1515;" href="#/sign-in">
+                  Log Out
+              </a>
               <button class="button button-icon" ng-click="showCatergories()">
                   <i class="icon ion-navicon"></i>
               </button>
@@ -377,7 +380,7 @@
                         <h2>Settings</h2>
                         <p>User and account settings.</p>
                     </a>
-                    <a class="item item-thumbnail-left" href="#/sign-in">
+                    <a class="item item-thumbnail-left" href="#">
                         <img src="img/logout.jpeg">
                         <h2>Log out</h2>
                         <p>Log out of user account.</p>
@@ -390,9 +393,16 @@
 
     <script id="messages.html" type="text/ng-template">
         <ion-view title="Messages">
+            <ion-nav-buttons side="right">
+                <a class="button" style="background-color: #8c1515; border-color: #8c1515;" href="#/sign-in">
+                    Log Out
+                </a>
+            </ion-nav-buttons>
             <ion-content padding="false">
                 <!-- Messages Image -->
-                    <img src="img/Messages%20Resized%20V2.jpg"/>
+                <div class="row">
+                    <div class="col"><img src="img/Messages%20Resized%20V2.jpg"/></div>
+                </div>
             </ion-content>
         </ion-view>
     </script>
