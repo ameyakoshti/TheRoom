@@ -34,6 +34,15 @@ angular.module('ionicApp', ['ionic'])
                     }
                 }
             })
+            .state('tabs.furniture', {
+                url: "/furniture",
+                views: {
+                    'home-tab': {
+                        templateUrl: "furniture.html",
+                        controller: 'HomeTabCtrl'
+                    }
+                }
+            })
             .state('tabs.facts', {
                 url: "/facts",
                 views: {
@@ -114,13 +123,12 @@ angular.module('ionicApp', ['ionic'])
 
     .controller('SignInCtrl', function($scope, $state) {
 
-        $scope.signIn = function(user) {
-            //console.log('Sign-In', user);
+        $scope.signIn = function() {
             $state.go('tabs.home');
         };
     })
 
-    .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal, $http) {
+    .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal, $http, $state) {
         $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
             $scope.taskModal = modal;
         }, {
@@ -145,6 +153,11 @@ angular.module('ionicApp', ['ionic'])
             $rootScope.itemDetails = $scope.itemListings[id].itemDetails;
             $rootScope.itemDescription = $scope.itemListings[id].itemDescription;
             $rootScope.itemPrice = $scope.itemListings[id].itemPrice;
+        };
+
+        $scope.selectCategory = function() {
+            $scope.taskModal.hide();
+            $state.go('tabs.furniture');
         };
 
         var url = "http://localhost:8080/";
