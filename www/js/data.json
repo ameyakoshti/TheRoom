@@ -1,0 +1,50 @@
+[
+    {
+        "itemTitle":"Couch",
+        "itemDetails":"The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.",
+        "itemDescription":"Used",
+        "itemPrice":30
+    },
+    {
+        "itemTitle":"Chair",
+        "itemDetails":"Perfect study chair",
+        "itemDescription":"New",
+        "itemPrice":35
+    },
+    {
+        "itemTitle":"Macbook Pro",
+        "itemDetails":"13 inch silver pro",
+        "itemDescription":"Like New",
+        "itemPrice":900
+    },
+    {
+        "itemTitle":"Hookah",
+        "itemDetails":"Blue 10 inch hookah; perfect for chill nights.",
+        "itemDescription":"Used",
+        "itemPrice":20
+    },
+    {
+        "itemTitle":"Microwave",
+        "itemDetails":"Stainless steel microwave",
+        "itemDescription":"Like New",
+        "itemPrice":100
+    },
+    {
+        "itemTitle":"Coffee Table",
+        "itemDetails":"Wood coffee table; never been used!",
+        "itemDescription":"New",
+        "itemPrice":45
+    },
+    {
+        "itemTitle":"Shoe rack",
+        "itemDetails":"Wood shoe rack; goes perfectly with the wood coffee table.",
+        "itemDescription":"Used",
+        "itemPrice":30
+    },
+    {
+        "itemTitle":"Router",
+        "itemDetails":"Wireless router",
+        "itemDescription":"New",
+        "itemPrice":50
+    }
+]
