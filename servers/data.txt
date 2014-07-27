@@ -6,22 +6,22 @@
         "itemPrice":30
     },
     {
-        "itemTitle":"Chair",
-        "itemDetails":"Perfect study chair",
-        "itemDescription":"New",
-        "itemPrice":35
-    },
-    {
-        "itemTitle":"Macbook Pro",
-        "itemDetails":"13 inch silver pro",
-        "itemDescription":"Like New",
-        "itemPrice":900
-    },
-    {
-        "itemTitle":"Hookah",
-        "itemDetails":"Blue 10 inch hookah; perfect for chill nights.",
+        "itemTitle":"Shirt",
+        "itemDetails":"Blue Old Navy Shirt",
         "itemDescription":"Used",
-        "itemPrice":20
+        "itemPrice":15
+    },
+    {
+        "itemTitle":"Bicycle",
+        "itemDetails":"Orange and blue bicycle; 3 gears",
+        "itemDescription":"Like New",
+        "itemPrice":100
+    },
+    {
+        "itemTitle":"Tickets",
+        "itemDetails":"Two tickets to the UT v. KU Basketball game",
+        "itemDescription":"New",
+        "itemPrice":150
     },
     {
         "itemTitle":"Microwave",
@@ -30,8 +30,8 @@
         "itemPrice":100
     },
     {
-        "itemTitle":"Coffee Table",
-        "itemDetails":"Wood coffee table; never been used!",
+        "itemTitle":"Gift Card",
+        "itemDetails":"All purpose gift card",
         "itemDescription":"New",
         "itemPrice":45
     },
@@ -46,5 +46,11 @@
         "itemDetails":"Wireless router",
         "itemDescription":"New",
         "itemPrice":50
+    },
+    {
+        "itemTitle":"Pen",
+        "itemDetails":"BIC",
+        "itemDescription":"New",
+        "itemPrice":1
     }
 ]
