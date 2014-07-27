@@ -44,13 +44,8 @@
             <button class="button button-block varun" ng-click="signIn(user)">
               Sign-In
             </button>
-
-
                <h5 class="text-center"> Don't have an account? <a href="#/register">Register Here</a></h5>
                <h6 class="text-center"><a href="#/register">Forgot password?</a></h6>
-
-
-              </a>
           </div>
         </ion-content>
       </ion-view>
@@ -116,9 +111,6 @@
 
           <ion-tab title="Sell" icon="ion-log-out" href="#/tab/sell">
               <ion-nav-view name="sell-tab"></ion-nav-view>
-
-            <!--  <ion-tab title="Sell" icon="ion-social-usd-outline" href="">
-          <ion-nav-view name=""></ion-nav-view> -->
         </ion-tab>
 
       </ion-tabs>
@@ -209,25 +201,21 @@
 
             <div class="row" style="padding-top:20px;">
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Reserve</a>
+                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading()">Reserve</a>
               </div>
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Save</a>
+                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Save</a>
               </div>
             </div>
             <div class="row" style="padding-top:20px;">
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Message Seller</a>
+                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Message Seller</a>
               </div>
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;"href="#/tab/home">Sell Similar</a>
+                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Sell Similar</a>
               </div>
             </div>
 
-          <!--<p>
-            <a class="button icon ion-home" href="#/tab/home"> Home</a>
-            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">Some images</a>
-          </p>-->
         </ion-content>
       </ion-view>
     </script>
@@ -328,10 +316,6 @@
                     </div>
                 </div>
 
-                <!--<p>
-                  <a class="button icon ion-home" href="#/tab/home"> Home</a>
-                  <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">Some images</a>
-                </p>-->
             </ion-content>
         </ion-view>
     </script>
@@ -397,9 +381,19 @@
             <ion-content padding="true">
 
                 <div class="row" style="padding-top:20px;">
-
-                    <div class="col col-100">
-                        <a class="button button-full varun" href="#/tab/home">pay with paypal</a>
+                    <div class="col col-33 col-offset-33">
+                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="walmart@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="couch">
+                            <input type="hidden" name="amount" value="20.00">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="button_subtype" value="services">
+                            <input type="hidden" name="note" value="0">
+                            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                            <input type="image" src="img\paypal-button.png" border="0" name="submit" style="position:absolute;top:12px;left:10px" ng-click="showLoading()">
+                        </form>
                     </div>
                 </div>
 

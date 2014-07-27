@@ -38,7 +38,8 @@ angular.module('ionicApp', ['ionic'])
                 url: "/facts",
                 views: {
                     'home-tab': {
-                        templateUrl: "facts.html"
+                        templateUrl: "facts.html",
+                        controller: 'factsCtrl'
                     }
                 }
             })
@@ -144,7 +145,6 @@ angular.module('ionicApp', ['ionic'])
 
         $http.get(url).
             success(function(data, status, headers, config) {
-                //what do I do here?
                 displayData(data);
             }).
             error(function(data, status, headers, config) {
@@ -155,4 +155,20 @@ angular.module('ionicApp', ['ionic'])
         displayData = function(dataObj){
             $scope.itemListings = dataObj;
         };
+    })
+
+    .controller('factsCtrl', function($scope, $rootScope, $ionicModal, $timeout, $ionicLoading) {
+        $scope.showLoading = function() {
+            $scope.loadingIndicator = $ionicLoading.show({
+                content: 'Item reserved!',
+                animation: 'fade-in',
+                showBackdrop: true,
+                maxWidth: 200,
+                showDelay: 500
+            });
+
+            $timeout(function(){
+                $scope.loadingIndicator.hide();
+            },2000);
+        }
     });
