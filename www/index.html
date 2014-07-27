@@ -204,7 +204,7 @@
                  <a class="button button-medium varun" style="width:140px;" ng-click="showLoading('Reserved')">Reserve</a>
               </div>
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading('Saved')">Save</a>
+                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Offer</a>
               </div>
             </div>
             <div class="row" style="padding-top:20px;">
@@ -212,7 +212,7 @@
                  <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Message Seller</a>
               </div>
               <div class="col col-50">
-                 <a class="button button-medium varun" style="width:140px;" href="#/tab/home">Sell Similar</a>
+                 <a class="button button-medium varun" style="width:140px;" ng-click="showLoading('Saved')">Save</a>
               </div>
             </div>
 
@@ -381,7 +381,7 @@
             <ion-content padding="true">
 
                 <div class="row" style="padding-top:20px;">
-                    <div class="col col-33 col-offset-33">
+                    <div class="col col-50">
                         <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_xclick">
                             <input type="hidden" name="business" value="walmart@gmail.com">
@@ -392,8 +392,11 @@
                             <input type="hidden" name="button_subtype" value="services">
                             <input type="hidden" name="note" value="0">
                             <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-                            <input type="image" src="img\paypal-button.png" border="0" name="submit" style="position:absolute;top:12px;left:100px" ng-click="showLoading()">
+                            <input type="image" src="img\paypal-button.png" border="0" name="submit">
                         </form>
+                    </div>
+                    <div class="col col-50">
+                        <a href="https://venmo.com/?txn=pay&recipients=ameya%20koshti&amount=20&audience=public"><input type="image" src="img\venmo-button.png" border="0" name="submit"></a>
                     </div>
                 </div>
 
