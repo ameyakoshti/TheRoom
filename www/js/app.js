@@ -152,7 +152,7 @@ angular.module('ionicApp', ['ionic'])
                 console.log(data);
         });
 
-        displayData = function(data){
-            
+        displayData = function(dataObj){
+            $scope.itemListings = dataObj;
         };
     });
