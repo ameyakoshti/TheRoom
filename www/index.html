@@ -171,21 +171,21 @@
 
             <label class="item item-input item-floating-label">
                 <span class="input-label">Item Name</span>
-                <h3>Used Couch</h3>
+                <p>Used Couch</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Description</span>
                 <div class="item-text-wrap">
-                    <h3>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</h3>
+                    <p>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</p>
                 </div>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Condition</span>
-                <h3>Used-Acceptable</h3>
+                <p>Used-Acceptable</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Price</span>
-                <h3>$30.00</h3>
+                <p>$30.00</p>
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label" >Location Preference</span>
@@ -343,12 +343,83 @@
       </ion-view>
     </script>
 
+    <script id="reserved.html" type="text/ng-template">
+        <ion-view title="Reserved Items">
+            <ion-content padding="true">
+                <div class="bar bar-header item-input-inset">
+                    <label class="item-input-wrapper">
+                        <i class="icon ion-ios7-search placeholder-icon"></i>
+                        <input type="search" placeholder="Search">
+                    </label>
+                    <button class="button button-clear">
+                        Cancel
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/couch.jpg"/></a></div>
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/chair.jpg"/></a></div>
+                </div>
+                <div class="row">
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/mbp.jpg"/></a></div>
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/hookah.jpg"/></a></div>
+                </div>
+                <div class="row">
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/microwave.jpg"/></a></div>
+                    <div class="col col-50"><a href="#/tab/transact"><img src="img/table.jpg"/></a></div>
+                </div>
+            </ion-content>
+        </ion-view>
+    </script>
+
+    <script id="transact.html" type="text/ng-template">
+        <ion-view title="Transact">
+            <ion-content padding="true">
+
+                <div class="row" style="padding-top:20px;">
+
+                    <div class="col col-100">
+                        <a class="button button-full varun" href="#/tab/home">pay with paypal</a>
+                    </div>
+                </div>
+
+                <!-- Product Image -->
+                <div class="row">
+                    <div class="col"><img src="img/couch.jpg"/></div>
+                </div>
+
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Item Name</span>
+                    <p>Used Couch</p>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Description</span>
+                    <div class="item-text-wrap">
+                        <p>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</p>
+                    </div>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Condition</span>
+                    <p>Used-Acceptable</p>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Price</span>
+                    <p>$30.00</p>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label" >Location</span>
+                    <p>Library</p>
+                </label>
+
+            </ion-content>
+        </ion-view>
+    </script>
+
     <script id="myroom.html" type="text/ng-template">
         <ion-view title="My Room">
             <ion-content padding="false">
                 <div class="list">
 
-                    <a class="item item-thumbnail-left" href="#">
+                    <a class="item item-thumbnail-left" href="#tab/reserved">
                         <img src="img/chair.JPG">
                         <h2>Reserved Items</h2>
                         <p>Items you have reserved to buy.</p>
