@@ -1,0 +1,53 @@
+<ion-view title="Transact">
+    <ion-content padding="true">
+
+        <div class="row" style="padding-top:20px;">
+            <div class="col col-50">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="walmart@gmail.com">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="item_name" value="couch">
+                    <input type="hidden" name="amount" value="20.00">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="button_subtype" value="services">
+                    <input type="hidden" name="note" value="0">
+                    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                    <input type="image" src="img\paypal-button.png" border="0" name="submit">
+                </form>
+            </div>
+            <div class="col col-50">
+                <a href="https://venmo.com/?txn=pay&recipients=ameya%20koshti&amount=20&audience=public"><input type="image" src="img\venmo-button.png" border="0" name="submit"></a>
+            </div>
+        </div>
+
+        <!-- Product Image -->
+        <div class="row">
+            <div class="col"><img src="img/couch.jpg"/></div>
+        </div>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Item Name</span>
+            <p>Used Couch</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Description</span>
+            <div class="item-text-wrap">
+                <p>The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.</p>
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Condition</span>
+            <p>Used-Acceptable</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Price</span>
+            <p>$30.00</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label" >Location</span>
+            <p>Library</p>
+        </label>
+
+    </ion-content>
+</ion-view>

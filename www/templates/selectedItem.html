@@ -1,0 +1,61 @@
+<ion-view title="{{itemname}}">
+    <ion-content padding="true">
+
+        <!-- Product Image -->
+        <div class="row">
+            <div class="col"><a href="#/tab/selectedItem"><img src="{{itemPic}}"/></a></div>
+        </div>
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Item Name</span>
+            <p>{{itemname}}</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Description</span>
+            <div class="item-text-wrap">
+                <p>{{itemDetails}}</p>
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Condition</span>
+            <p>{{itemDescription}}</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label">Price</span>
+            <p>{{itemPrice}}</p>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label" >Location Preference</span>
+            <label class=" item-input item-select-right">
+                <div class="input-label-right">
+                    &nbsp
+                </div>
+                <select>
+                    <option selected>Select</option>
+                    <option>Library</option>
+                    <option>Student Union</option>
+                    <option>Mens Restroom</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </label>
+
+        <div class="row" style="padding-top:20px;">
+            <div class="col col-50">
+                <a class="button button-medium flatblue" style="width:140px;" ng-click="showLoading('Reserved')">Reserve</a>
+            </div>
+            <div class="col col-50">
+                <a class="button button-medium flatblue" style="width:140px;" href="#/tab/home">Offer</a>
+            </div>
+        </div>
+        <div class="row" style="padding-top:20px;">
+            <div class="col col-50">
+                <a class="button button-medium flatblue" style="width:140px;" href="#/tab/home">Message Seller</a>
+            </div>
+            <div class="col col-50">
+                <a class="button button-medium flatblue" style="width:140px;" ng-click="showLoading('Saved')">Save</a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

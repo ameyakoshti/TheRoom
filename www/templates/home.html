@@ -1,0 +1,37 @@
+<ion-view title="Home">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon" ng-click="showCatergories()">
+            <i class="icon ion-navicon"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-content padding="true">
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios7-search placeholder-icon"></i>
+                <input type="search" placeholder="Search">
+            </label>
+            <button class="button button-clear">
+                Cancel
+            </button>
+        </div>
+        <div class="row">
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(0)"><img src="img/couch.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(1)"><img src="img/shirt.jpeg"/></a></div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(2)"><img src="img/bike.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(3)"><img src="img/ticket.jpg"/></a></div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(4)"><img src="img/giftcard.jpg"/></a></div>
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(5)"><img src="img/book.jpeg"/></a></div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(6)"><img src="img/shoerack.jpeg"/></a></div>
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(7)"><img src="img/router.jpg"/></a></div>
+        </div>
+        <div class="row">
+            <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(8)"><img src="img/No_Image_Available.png"/></a></div>
+        </div>
+    </ion-content>
+</ion-view>

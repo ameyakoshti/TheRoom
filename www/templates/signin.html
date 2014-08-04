@@ -1,0 +1,21 @@
+<ion-view title="Login">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="text" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password" ng-model="user.password">
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block varun" ng-click="signIn(user)">
+                Sign-In
+            </button>
+            <h5 class="text-center"> Dont have an account? <a href="#/register">Register Here</a></h5>
+            <h6 class="text-center"><a href="#/tabs/furniture">Forgot password?</a></h6>
+        </div>
+    </ion-content>
+</ion-view>

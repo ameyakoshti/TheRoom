@@ -8,28 +8,28 @@ angular.module('ionicApp', ['ionic'])
         $stateProvider
             .state('signin', {
                 url: "/sign-in",
-                templateUrl: "sign-in.html",
+                templateUrl: "templates/signin.html",
                 controller: 'SignInCtrl'
             })
             .state('forgotpassword', {
                 url: "/forgot-password",
-                templateUrl: "forgot-password.html"
+                templateUrl: "templates/forgotpassword.html"
             })
             .state('register', {
                 url: "/register",
-                templateUrl: "register.html",
+                templateUrl: "templates/register.html",
                 controller: 'SignInCtrl'
             })
             .state('tabs', {
                 url: "/tab",
                 abstract: true,
-                templateUrl: "tabs.html"
+                templateUrl: "templates/tabs.html"
             })
             .state('tabs.home', {
                 url: "/home",
                 views: {
                     'home-tab': {
-                        templateUrl: "home.html",
+                        templateUrl: "templates/home.html",
                         controller: 'HomeTabCtrl'
                     }
                 }
@@ -38,16 +38,16 @@ angular.module('ionicApp', ['ionic'])
                 url: "/furniture",
                 views: {
                     'home-tab': {
-                        templateUrl: "furniture.html",
+                        templateUrl: "templates/furniture.html",
                         controller: 'HomeTabCtrl'
                     }
                 }
             })
-            .state('tabs.facts', {
-                url: "/facts",
+            .state('tabs.selectedItem', {
+                url: "/selectedItem",
                 views: {
                     'home-tab': {
-                        templateUrl: "facts.html",
+                        templateUrl: "templates/selectedItem.html",
                         controller: 'factsCtrl'
                     }
                 }
@@ -56,15 +56,7 @@ angular.module('ionicApp', ['ionic'])
                 url: "/sell",
                 views: {
                     'sell-tab': {
-                        templateUrl: "sell.html"
-                    }
-                }
-            })
-            .state('tabs.facts2', {
-                url: "/facts2",
-                views: {
-                    'home-tab': {
-                        templateUrl: "facts2.html"
+                        templateUrl: "templates/sell.html"
                     }
                 }
             })
@@ -72,7 +64,7 @@ angular.module('ionicApp', ['ionic'])
                 url: "/messages",
                 views: {
                     'messages-tab': {
-                        templateUrl: "messages.html"
+                        templateUrl: "templates/messages.html"
                     }
                 }
             })
@@ -80,7 +72,7 @@ angular.module('ionicApp', ['ionic'])
                 url: "/myroom",
                 views: {
                     'myroom-tab': {
-                        templateUrl: "myroom.html"
+                        templateUrl: "templates/myroom.html"
                     }
                 }
             })
@@ -88,7 +80,7 @@ angular.module('ionicApp', ['ionic'])
                 url: "/reserved",
                 views: {
                     'myroom-tab': {
-                        templateUrl: "reserved.html"
+                        templateUrl: "templates/reserved.html"
                     }
                 }
             })
@@ -96,15 +88,7 @@ angular.module('ionicApp', ['ionic'])
                 url: "/transact",
                 views: {
                     'myroom-tab': {
-                        templateUrl: "transact.html"
-                    }
-                }
-            })
-            .state('tabs.navstack', {
-                url: "/navstack",
-                views: {
-                    'about-tab': {
-                        templateUrl: "nav-stack.html"
+                        templateUrl: "templates/transact.html"
                     }
                 }
             })
@@ -129,7 +113,7 @@ angular.module('ionicApp', ['ionic'])
     })
 
     .controller('HomeTabCtrl', function($scope, $rootScope, $ionicModal, $http, $state) {
-        $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
+        $ionicModal.fromTemplateUrl('templates/newtask.html', function(modal) {
             $scope.taskModal = modal;
         }, {
             scope: $scope
