@@ -56,10 +56,53 @@
         "itemPrice":50
     },
     {
-        "itemPic":"img/No_Image_Available.jpg",
-        "itemTitle":"Pen",
-        "itemDetails":"BIC",
+        "itemPic":"img/shelf.jpg",
+        "itemTitle":"Shelf",
+        "itemDetails":"Mini Colorful Shelf",
+        "itemDescription":"Used - Like New",
+        "itemPrice":10
+    },
+    {
+        "itemPic":"img/woodtable.jpg",
+        "itemTitle":"Wood Table",
+        "itemDetails":"Collectors wood table",
         "itemDescription":"New",
-        "itemPrice":1
-    }
+        "itemPrice":50
+        },
+    {
+        "itemPic":"img/purplecouch.jpg",
+        "itemTitle":"Purple Chair",
+        "itemDetails":"Extremely comfy",
+        "itemDescription":"Used",
+        "itemPrice":20
+        },
+    {
+        "itemPic":"img/bed.gif",
+        "itemTitle":"Bed Frame",
+        "itemDetails":"Wood queen size bed frame",
+        "itemDescription":"Like New",
+        "itemPrice":100
+         },
+    {
+        "itemPic":"img/michiganshirt.jpeg",
+        "itemTitle":"Women's UMich Shirt",
+        "itemDetails":"Comfort Colors",
+        "itemDescription":"New",
+        "itemPrice":15
+        },
+    {
+        "itemPic":"img/umichbeanie.jpeg",
+        "itemTitle":"UMich Beanie",
+        "itemDetails":"Classic Beanie",
+        "itemDescription":"Used",
+        "itemPrice":5
+        },
+    {
+        "itemPic":"img/backpack.jpeg",
+        "itemTitle":"UMich Backpack",
+        "itemDetails":"Wolverine Backpack",
+        "itemDescription":"Like New",
+        "itemPrice":25
+        }
+
 ]

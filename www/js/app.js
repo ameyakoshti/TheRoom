@@ -68,6 +68,14 @@ angular.module('ionicApp', ['ionic'])
                     }
                 }
             })
+            .state('tabs.conversation', {
+                url: "/conversation",
+                views: {
+                    'messages-tab': {
+                        templateUrl: "templates/conversation.html"
+                    }
+                }
+            })
             .state('tabs.myroom', {
                 url: "/myroom",
                 views: {
