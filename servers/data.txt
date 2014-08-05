@@ -2,7 +2,7 @@
     {
         "itemPic":"img/couch.jpg",
         "itemTitle":"Couch",
-        "itemDetails":"The old $20 couch from the Salvation Army was pretty ugly and smelled, but it fit the apartment three New York college roommates were sharing.",
+        "itemDetails":"This couch was used for 3 years. Still in very good condition.",
         "itemDescription":"Used",
         "itemPrice":30
     },
