@@ -1,8 +1,11 @@
-<ion-view title="Home">
+<ion-view title="University Of Michigan">
     <ion-nav-buttons side="left">
         <button class="button button-icon" ng-click="showCatergories()">
             <i class="icon ion-navicon"></i>
         </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <div><img src="img/michigan.png"/></a></div>
     </ion-nav-buttons>
     <ion-content padding="true">
         <div class="bar bar-header item-input-inset">
@@ -13,6 +16,9 @@
             <button class="button button-clear">
                 Cancel
             </button>
+        </div>
+        <div class="item-divider text-center">
+            Recently Listed
         </div>
         <div class="row">
             <div class="col col-50"><a href="#/tab/selectedItem" ng-click="itemClicked(0)"><img src="img/couch.jpg"/></a></div>

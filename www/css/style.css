@@ -4,15 +4,15 @@ img, a {
 }
 
 .tabs-puja > .tabs, .tabs.tabs-puja {
-    border-color: #3498db;
-    background-color: #3498db;
-    background-image: linear-gradient(0deg, #3498db, #3498db 50%, transparent 50%);
+    border-color: #003e78;
+    background-color: #003e78;
+    background-image: linear-gradient(0deg, #003e78, #003e78 50%, transparent 50%);
     color: #fff;
 }
 
 .flatblue{
-    border-color: #3498db;
-    background-color: #3498db;
+    border-color: #003e78;
+    background-color: #003e78;
     color: #fff;
 }
 
