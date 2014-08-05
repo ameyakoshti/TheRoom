@@ -26,12 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/templates/home.html">
+      <file leaf-file-name="sell.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/templates/sell.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="780">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding />
+            <state vertical-scroll-proportion="0.3984375" vertical-offset="0" max-vertical-offset="1545">
+              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,11 +60,11 @@
         <option value="$PROJECT_DIR$/www/templates/signin.html" />
         <option value="$PROJECT_DIR$/www/templates/reserved.html" />
         <option value="$PROJECT_DIR$/www/templates/selectedItem.html" />
-        <option value="$PROJECT_DIR$/www/templates/sell.html" />
         <option value="$PROJECT_DIR$/www/templates/transact.html" />
         <option value="$PROJECT_DIR$/www/templates/conversation.html" />
         <option value="$PROJECT_DIR$/www/templates/furniture.html" />
         <option value="$PROJECT_DIR$/www/templates/home.html" />
+        <option value="$PROJECT_DIR$/www/templates/sell.html" />
       </list>
     </option>
   </component>
@@ -458,14 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sell.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0703125" vertical-offset="0" max-vertical-offset="1545">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/reserved.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06891271" vertical-offset="0" max-vertical-offset="750">
@@ -515,6 +509,16 @@
         <state vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="780">
           <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/sell.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3984375" vertical-offset="0" max-vertical-offset="1545">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
