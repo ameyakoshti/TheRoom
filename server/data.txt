@@ -1,0 +1,108 @@
+[
+    {
+        "itemPic":"img/couch.jpg",
+        "itemTitle":"Couch",
+        "itemDetails":"This couch was used for 3 years. Still in very good condition.",
+        "itemDescription":"Used",
+        "itemPrice":30
+    },
+    {
+        "itemPic":"img/shirt.jpeg",
+        "itemTitle":"Shirt",
+        "itemDetails":"Blue Old Navy Shirt",
+        "itemDescription":"Used",
+        "itemPrice":15
+    },
+    {
+        "itemPic":"img/bike.jpeg",
+        "itemTitle":"Bicycle",
+        "itemDetails":"Orange and blue bicycle; 3 gears",
+        "itemDescription":"Like New",
+        "itemPrice":100
+    },
+    {
+        "itemPic":"img/ticket.jpg",
+        "itemTitle":"Tickets",
+        "itemDetails":"Two tickets to the UT v. KU Basketball game",
+        "itemDescription":"New",
+        "itemPrice":150
+    },
+    {
+        "itemPic":"img/giftcard.jpg",
+        "itemTitle":"Gift Card",
+        "itemDetails":"All purpose gift card",
+        "itemDescription":"New",
+        "itemPrice":45
+    },
+    {
+        "itemPic":"img/book.jpeg",
+        "itemTitle":"Books",
+        "itemDetails":"Computer graphics , Computer networks , Analog and Digital Communication Systems books",
+        "itemDescription":"Like New",
+        "itemPrice":75
+    },
+    {
+        "itemPic":"img/shoerack.jpeg",
+        "itemTitle":"Shoe rack",
+        "itemDetails":"Wood shoe rack; goes perfectly with the wood coffee table.",
+        "itemDescription":"Used",
+        "itemPrice":30
+    },
+    {
+        "itemPic":"img/router.jpg",
+        "itemTitle":"Router",
+        "itemDetails":"Wireless router",
+        "itemDescription":"New",
+        "itemPrice":50
+    },
+    {
+        "itemPic":"img/shelf.jpg",
+        "itemTitle":"Shelf",
+        "itemDetails":"Mini Colorful Shelf",
+        "itemDescription":"Used - Like New",
+        "itemPrice":10
+    },
+    {
+        "itemPic":"img/woodtable.jpg",
+        "itemTitle":"Wood Table",
+        "itemDetails":"Collectors wood table",
+        "itemDescription":"New",
+        "itemPrice":50
+        },
+    {
+        "itemPic":"img/purplecouch.jpg",
+        "itemTitle":"Purple Chair",
+        "itemDetails":"Extremely comfy",
+        "itemDescription":"Used",
+        "itemPrice":20
+        },
+    {
+        "itemPic":"img/bed.gif",
+        "itemTitle":"Bed Frame",
+        "itemDetails":"Wood queen size bed frame",
+        "itemDescription":"Like New",
+        "itemPrice":100
+         },
+    {
+        "itemPic":"img/michiganshirt.jpeg",
+        "itemTitle":"Women's UMich Shirt",
+        "itemDetails":"Comfort Colors",
+        "itemDescription":"New",
+        "itemPrice":15
+        },
+    {
+        "itemPic":"img/umichbeanie.jpeg",
+        "itemTitle":"UMich Beanie",
+        "itemDetails":"Classic Beanie",
+        "itemDescription":"Used",
+        "itemPrice":5
+        },
+    {
+        "itemPic":"img/backpack.jpeg",
+        "itemTitle":"UMich Backpack",
+        "itemDetails":"Wolverine Backpack",
+        "itemDescription":"Like New",
+        "itemPrice":25
+        }
+
+]

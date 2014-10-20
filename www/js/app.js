@@ -152,7 +152,7 @@ angular.module('ionicApp', ['ionic'])
             $state.go('tabs.furniture');
         };
 
-        var url = "http://localhost.paypal.com:8080/";
+        var url = "http://localhost.paypal.com:3000/";
 
         $http.get(url).
             success(function(data, status, headers, config) {
