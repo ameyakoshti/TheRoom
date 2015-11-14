@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/donsalari/TheRoom.svg)](https://travis-ci.org/donsalari/TheRoom) 
+[![Dependency Status](https://david-dm.org/donsalari/TheRoom.svg)](https://david-dm.org/donsalari/TheRoom)
+[![devDependency Status](https://david-dm.org/donsalari/TheRoom/dev-status.svg)](https://david-dm.org/donsalari/TheRoom#info=devDependencies)
+
+
 The Room
 =====================
 
